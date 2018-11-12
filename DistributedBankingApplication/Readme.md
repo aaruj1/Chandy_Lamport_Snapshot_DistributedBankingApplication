@@ -41,7 +41,10 @@ For simplicity, in this assignment, the controller will contact one of the branc
 ## To generate Bank.java using protoc :
     $> bash
     $> export PATH=/home/vchaska1/protobuf/bin:$PATH
-    $> protoc --java_out=./ bank.proto
+
+### cd to DistributedBankingApplication the run command belows :
+
+    $> protoc --java_out=./src/ ./src/bank.proto
 
 
 ## Steps to Compile and Run the program
@@ -86,10 +89,3 @@ For simplicity, in this assignment, the controller will contact one of the branc
     ============================================================================================
 
 ### Note : Gives balance at each branch as well as their incomming channel balance.
-### There are few warning related to protobuf jar. 
-    WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/Users/DistributedBankingApplication/lib/protobuf-java-3.6.1.jar) to field java.nio.Buffer.address
-    WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
-    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-    WARNING: All illegal access operations will be denied in a future release
-
