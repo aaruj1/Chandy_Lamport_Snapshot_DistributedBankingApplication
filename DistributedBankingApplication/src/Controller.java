@@ -129,7 +129,7 @@ public class Controller {
 	private static void retrieveSnapshot(Bank.InitBranch.Builder initBranch, int snapshotId) {
 		try {
 
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			Bank.RetrieveSnapshot retrieveSnapshot = Bank.RetrieveSnapshot.newBuilder().setSnapshotId(snapshotId).build();
 			Bank.BranchMessage branchMessage = Bank.BranchMessage.newBuilder().setRetrieveSnapshot(retrieveSnapshot).build();
 
